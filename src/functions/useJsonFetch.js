@@ -5,6 +5,8 @@ export default function useJsonFetch(url, opts = {}) {
   const [data, setData] = useState();
   const [error, setError] = useState();
 
+  console.log(url);
+
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
