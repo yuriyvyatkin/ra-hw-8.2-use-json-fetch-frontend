@@ -8,9 +8,8 @@ export default function useJsonFetch(url, opts = {}) {
   useEffect(() => {
     fetch(url, {
       ...{
-        method: 'GET',
+        ...opts
       },
-      ...opts
     })
       .then((response) => response.json())
       .then((data) => {
