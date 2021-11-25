@@ -5,10 +5,10 @@ export default function useJsonFetch(url, opts = {}) {
   const [data, setData] = useState();
   const [error, setError] = useState();
 
-  console.log(url);
-
   useEffect(() => {
-    fetch(url)
+    fetch(url, {
+      ...opts,
+    })
       .then((response) => response.json())
       .then((data) => {
         setLoading(false);
