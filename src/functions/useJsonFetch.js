@@ -6,12 +6,7 @@ export default function useJsonFetch(url, opts = {}) {
   const [error, setError] = useState();
 
   useEffect(() => {
-    fetch(url, {
-      ...{
-        method: "get",
-        ...opts,
-      },
-    })
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
         setLoading(false);
