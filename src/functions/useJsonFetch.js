@@ -14,12 +14,11 @@ export default function useJsonFetch(url, opts = {}) {
         setLoading(false);
         if (!data) {
           setError('Error! Empty Data Set.');
-          return;
         } else if (/error/i.test(data.status)) {
           setError(data.status);
-          return;
+        } else {
+          setData(data.status);
         }
-        setData(data.status);
       })
       .catch((error) => {
         setLoading(false);
