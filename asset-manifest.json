@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ra-hw-8.2-use-json-fetch-frontend/static/css/main.ca04df65.chunk.css",
+    "main.js": "/ra-hw-8.2-use-json-fetch-frontend/static/js/main.1616eb21.chunk.js",
+    "main.js.map": "/ra-hw-8.2-use-json-fetch-frontend/static/js/main.1616eb21.chunk.js.map",
+    "runtime-main.js": "/ra-hw-8.2-use-json-fetch-frontend/static/js/runtime-main.8c25b9fd.js",
+    "runtime-main.js.map": "/ra-hw-8.2-use-json-fetch-frontend/static/js/runtime-main.8c25b9fd.js.map",
+    "static/js/2.d0bb2bd4.chunk.js": "/ra-hw-8.2-use-json-fetch-frontend/static/js/2.d0bb2bd4.chunk.js",
+    "static/js/2.d0bb2bd4.chunk.js.map": "/ra-hw-8.2-use-json-fetch-frontend/static/js/2.d0bb2bd4.chunk.js.map",
+    "static/js/3.5c5b0c10.chunk.js": "/ra-hw-8.2-use-json-fetch-frontend/static/js/3.5c5b0c10.chunk.js",
+    "static/js/3.5c5b0c10.chunk.js.map": "/ra-hw-8.2-use-json-fetch-frontend/static/js/3.5c5b0c10.chunk.js.map",
+    "index.html": "/ra-hw-8.2-use-json-fetch-frontend/index.html",
+    "static/css/main.ca04df65.chunk.css.map": "/ra-hw-8.2-use-json-fetch-frontend/static/css/main.ca04df65.chunk.css.map",
+    "static/js/2.d0bb2bd4.chunk.js.LICENSE.txt": "/ra-hw-8.2-use-json-fetch-frontend/static/js/2.d0bb2bd4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c25b9fd.js",
+    "static/js/2.d0bb2bd4.chunk.js",
+    "static/css/main.ca04df65.chunk.css",
+    "static/js/main.1616eb21.chunk.js"
+  ]
+}
