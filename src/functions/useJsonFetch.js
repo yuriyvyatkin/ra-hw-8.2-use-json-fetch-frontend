@@ -11,7 +11,6 @@ export default function useJsonFetch(url, opts = {}) {
     })
       .then((response) => response.json())
       .then((data) => {
-        setLoading(false);
         if (!data) {
           setError('Error! Empty Data Set.');
         } else if (/error/i.test(data.status)) {
@@ -21,8 +20,10 @@ export default function useJsonFetch(url, opts = {}) {
         }
       })
       .catch((error) => {
-        setLoading(false);
         setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

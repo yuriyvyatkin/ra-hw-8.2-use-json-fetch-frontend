@@ -1,10 +1,11 @@
 import useJsonFetch from '../functions/useJsonFetch';
-import output from '../functions/output';
 
 export default function Second() {
-  const { error } = useJsonFetch(`${process.env.REACT_APP_ERROR_URL}`);
+  const { loading, error } = useJsonFetch(`${process.env.REACT_APP_ERROR_URL}`);
 
-  output({ name: 'Second', error });
+  if (!loading) {
+    console.log(`Second component error: ${error}`);
+  }
 
-  return <div className="Second" />;
+  return null;
 }

@@ -1,10 +1,11 @@
 import useJsonFetch from '../functions/useJsonFetch';
-import output from '../functions/output';
 
 export default function First() {
-  const { data } = useJsonFetch(`${process.env.REACT_APP_DATA_URL}`);
+  const { loading, data } = useJsonFetch(`${process.env.REACT_APP_DATA_URL}`);
 
-  output({ name: 'First', data });
+  if (!loading) {
+    console.log(`First component data: ${data}`);
+  }
 
-  return <div className="First" />;
+  return null;
 }
